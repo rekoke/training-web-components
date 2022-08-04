@@ -40,3 +40,7 @@ Go to the localhost URL provided by the server.
 - I saw the discount in the top corner of the tour item but I couldn't find the logic behind it so I didn't added it. Same with the favourite/heart button on the image.
 - Due to the lack of user comments, I added 2 lines of the description where the comment is placed to fill that part with text and make it similar to the design.
 - I didn't use any framework or external libraries to achieve the desired results.
+
+
+![alt text](https://i.postimg.cc/0NqNT3tg/Screenshot-2022-08-04-at-16-48-52.png)
+![alt text](https://i.postimg.cc/nLwPj8Ng/Screenshot-2022-08-04-at-16-46-08.png)
