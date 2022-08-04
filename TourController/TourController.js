@@ -22,10 +22,10 @@ myTemplate.innerHTML=`
         </div>
         <select>
           <option value="" disabled selected hidden>Please Choose...</option>
-          <option value=${sortingTypes.PRICE_DESC}>highest price</option>
-          <option value=${sortingTypes.PRICE_ASC}>lowest price</option>
-          <option value=${sortingTypes.LENGTH_DESC}>longest tour</option>
-          <option value=${sortingTypes.LENGTH_ASC}>shortest tour</option>
+          <option value=${sortingTypes.PRICE_DESC}>Highest Price</option>
+          <option value=${sortingTypes.PRICE_ASC}>Lowest Price</option>
+          <option value=${sortingTypes.LENGTH_DESC}>Longest Tour</option>
+          <option value=${sortingTypes.LENGTH_ASC}>Shortest Tour</option>
         </select>
       </div>
       <div id="filterSelector" class="selector-container__selector">
