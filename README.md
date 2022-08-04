@@ -29,7 +29,7 @@ Run the server.
 static-server
 ```
 
-And launch index.html in your favourite browser.
+Go to the localhost URL provided by the server.
 
 ## Comments
 - I added a scroll to be able to see all the dates and availabilty. If the availability is less than 5 it turns red as per design.
