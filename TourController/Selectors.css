@@ -1,0 +1,46 @@
+.selector-container {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+.selector-container__selector {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  justify-content: space-between;
+}
+.selector-container__selector__title {
+  color: #a0a9b4;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.selector-container__selector select {
+  height: 40px;
+}
+@media screen and (min-width: 780px) {
+  .selector-container {
+    max-width: 1000px;
+    margin: 10px auto;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+  }
+  .selector-container__selector {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+  .selector-container__selector:last-child {
+    margin-right: 10px;
+  }
+  .selector-container__selector__title {
+    margin-right: 10px;
+  }
+  .selector-container__selector select {
+    width: 100%;
+    flex: 1;
+  }
+}/*# sourceMappingURL=Selectors.css.map */

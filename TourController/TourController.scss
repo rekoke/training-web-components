@@ -1,0 +1,219 @@
+$grey: #a0a9b4;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+.tour-list{
+    margin: 0;
+    padding: 0;
+    &__item{
+        margin-bottom: 15px;
+        background: #fff;
+        padding-bottom: 15px;
+        &__container{
+            &__img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                object-position: bottom;
+                margin-bottom: 10px;
+            }
+            &__text-container{
+                margin: 10px 15px;
+                &__top{
+                    margin-bottom: 30px;
+                    &__title{
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    &__reviews{
+                        display: flex;
+                        &__stars{
+                            margin-right: 5px;
+                        }
+                        &__number{
+                            color: $grey;
+                        }
+                    }
+                    &__description{
+                        display: none;
+                    }
+                    &__info{
+                        border-top: 1px solid #a0a9b436;
+                        padding-left: 0;
+                        padding-top: 10px;
+                        margin: 10px 0;
+                        &__item{
+                            display: flex;
+                            &__title{
+                                width: 50%;
+                                color: $grey;
+                                font-size: 14px;
+                            }
+                            &__content{
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                .see-more{
+                                    display: none;
+                                }
+
+                            }
+                        }
+                    }
+                }
+                &__bottom{
+                    &__duration-price{
+                        padding-left: 0;
+                        border-bottom: 1px solid #a0a9b436;
+                        margin-bottom: 10px;
+                        padding-bottom: 10px;
+                        display: flex;
+                        &__duration,
+                        &__price{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            &__title{
+                                color: $grey;
+                                font-size: 14px;
+                                margin-bottom: 5px;
+                            }
+                            &__content{
+                                font-weight: bold;
+                            }
+                        }
+                        &__duration{
+                            margin-right: 40%;
+                        }
+                        &__price{
+                            &__content{
+                                font-size: 20px;
+                                color: #43c4ac;
+                            }
+                        }
+                    }
+                    &__slots{
+                        list-style: none;
+                        padding-left: 0;
+                        display: flex;
+                        overflow: scroll;
+                        height: 50px;
+                        &__item{
+                            display: flex;
+                            flex-direction: column;
+                            min-width: 50%;
+                            &__availability{
+                                font-size: 14px;
+                                &.-less-available{
+                                    color: #e74c3c;
+                                }
+                            }
+                            &__dates{
+                                color: $grey;
+                                font-size: 12px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    &__button{
+                        background-color: #f39a2e;
+                        width: 100%;
+                        height: 40px;
+                        border: none;
+                        border-radius: 3px;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        position: relative;
+                        margin: 15px 0px 0;
+                        cursor: pointer;
+                        &::after{
+                            content: '>';
+                            position: absolute;
+                            right: 10px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 780px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__item{
+            padding-bottom: 0;
+            max-width: 1000px;
+            margin-right: 0;
+            list-style: none;
+            &__container{
+                display: flex;
+                justify-content: space-between;
+                &__img{
+                    width: 35%;
+                    margin-bottom: 0;
+                }
+                &__text-container{
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px;
+                    &__top{
+                        width: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 15px;
+                        margin-bottom: 0;
+                        &__description{
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2; /* number of lines to show */
+                            line-clamp: 2; 
+                            -webkit-box-orient: vertical;
+                            margin: 15px 0;
+                        }
+                        &__info{
+                            margin-top: auto;
+                            &__item{
+                                &__title{
+                                    width: 35%;
+                                }
+                                &__content{
+                                    display: flex;
+                                    align-items: baseline;
+                                    .see-more{
+                                        display: block;
+                                        margin-left: 8px;
+                                        color: #4cbae7;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__bottom{
+                        width: 37%;
+                        display: flex;
+                        flex-direction: column;
+                        &__duration-price{
+                            &__price{
+                                &__content{
+                                    font-size: 25px;
+                                }
+                            }
+                            &__duration{
+                                margin-right: 20%;
+                            }
+                        }
+                        &__button{
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
